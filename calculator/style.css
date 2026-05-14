@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a2e;
+}
+.calculator {
+  background: #16213e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+}
+.display {
+  background: #0f3460;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: right;
+  margin-bottom: 16px;
+}
+#expression { color: #888; font-size: 13px; min-height: 18px; }
+#result     { color: #fff; font-size: 36px; }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1a1a2e;
+  color: white;
+}
+.btn-op    { background: #0f3460; color: #00e5ff; }
+.btn-clear { background: #3a0020; color: #ff4081; }
+.btn-eq    { background: #00e5ff; color: #000; font-weight: bold; }
+.span2     { grid-column: span 2; } /* Zero button takes 2 cols */
